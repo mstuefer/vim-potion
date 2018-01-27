@@ -21,6 +21,20 @@ syntax match potionComment "\v#.*$"
 
 highlight link potionComment Comment
 
+" Operators
+
+syntax match potionOperator "\v\*"
+syntax match potionOperator "\v/"
+syntax match potionOperator "\v\+"
+syntax match potionOperator "\v-"
+syntax match potionOperator "\v\?"
+syntax match potionOperator "\v\*\="
+syntax match potionOperator "\v/\="
+syntax match potionOperator "\v\+\="
+syntax match potionOperator "\v-\="
+
+highlight link potionOperator Operator
+
 """"""""""""""""""
 
 let b:current_syntax = "potion"
